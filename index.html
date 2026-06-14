@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golpes na Era Digital</title>
 
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    background:#161b22;
+    text-align:center;
+    padding:50px;
+}
+
+h1{
+    color:#58a6ff;
+}
+
+section{
+    max-width:900px;
+    margin:20px auto;
+    background:#161b22;
+    padding:20px;
+    border-radius:15px;
+}
+
+h2{
+    color:#58a6ff;
+}
+
+button{
+    background:#58a6ff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#resultado{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔒 Golpes na Era Digital</h1>
+    <p>Conhecer para se proteger.</p>
+</header>
+
+<section>
+    <h2>📊 Estatísticas</h2>
+    <p>
+        Os golpes digitais crescem a cada ano e afetam milhões de pessoas.
+        A informação é uma das principais formas de prevenção.
+    </p>
+</section>
+
+<section>
+    <h2>🎣 Phishing</h2>
+    <p>
+        O phishing ocorre quando criminosos tentam enganar a vítima para obter
+        senhas, dados bancários ou informações pessoais através de mensagens falsas.
+    </p>
+</section>
+
+<section>
+    <h2>💸 Golpe do PIX</h2>
+    <p>
+        Os criminosos utilizam engenharia social para convencer a vítima a realizar
+        transferências instantâneas.
+    </p>
+</section>
+
+<section>
+    <h2>📱 Golpe do WhatsApp</h2>
+    <p>
+        O golpista tenta obter o código de verificação da vítima para assumir a conta.
+    </p>
+</section>
+
+<section>
+    <h2>🛡️ Como se proteger?</h2>
+    <ul>
+        <li>Ative autenticação em dois fatores.</li>
+        <li>Use senhas fortes.</li>
+        <li>Desconfie de mensagens urgentes.</li>
+        <li>Verifique links antes de clicar.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🎮 Quiz</h2>
+    <p>Você recebeu um link estranho por SMS. O que fazer?</p>
+
+    <button onclick="errado()">Clicar no link</button>
+    <button onclick="correto()">Ignorar e verificar a fonte</button>
+
+    <p id="resultado"></p>
+</section>
+
+<script>
+function correto(){
+    document.getElementById("resultado").innerHTML =
+    "✅ Correto! Sempre confirme a origem da mensagem.";
+}
+
+function errado(){
+    document.getElementById("resultado").innerHTML =
+    "❌ Errado! Links suspeitos podem roubar seus dados.";
+}
+</script>
+
+</body>
+</html>
